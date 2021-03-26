@@ -1,0 +1,360 @@
+<html>
+<head>
+<title>Healthy Herbs</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+<link rel="stylesheet" href="C:\Users\DELL\Documents\Website\bottomstyle.css">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/> 
+<link rel="icon" href="C:\Users\DELL\Documents\Website\logoicon.png" type="image/x-icon">
+<style>
+
+.d1 {width:20%; height:10%; float:left;}
+.d2 {width:10%; height:10%; float:left; }
+.d3 {width: 45%; height: 10%; float: left;}
+.unlist {height: 50px; font-size: 17px; list-style-type: none; margin: 0; padding: 0; overflow: hidden;}
+.list {float: left; background-color: #333;}
+.list a {display: block; color: white; text-align: center; padding: 10px 18px; text-decoration: none;}
+.list a:hover:not(.active) {background-color: #111;}
+.active {background-color: rgb(20, 150, 20);} 
+
+select {width: 100%;}
+
+.content1 {width:65%; height:725px; float: left; }
+
+.right1 {width:15%; height: 100%; float: right; margin-top: -10px;}
+
+.left1 {width: 20%; float:left; height:750px; border-radius: 30px; border-right: 1px solid rgb(20, 150, 20);}
+
+.content2 {width: 65%; height: 60%; float: left;   margin-top: 10px;}
+.a-diseases {color: wheat; text-decoration: none; font-weight: bold;}
+.a-diseases:hover {color: rgb(150, 200, 0);}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+.slider {max-width: 300px; position: relative; margin: auto;}
+.prev, .next {cursor: pointer; position: absolute; top: 65%; width: auto;
+                    margin-top: -22px; padding: 8px; color:rgb(20, 150, 20); 
+                    font-size: 17px; transition: 0.6s ease; user-select: none;}
+.next {right: 0;}
+.prev:hover, .next:hover {background-color: rgba(255,255,255,0.3);}
+.text {color: white; font-size: 16px; padding: 8px 12px;
+          position: relative;  width: 100%; text-align: center;}
+
+li {margin-top: 10px;}
+
+::-webkit-scrollbar {width: 5px; overflow-x:hidden;}
+::-webkit-scrollbar-track {background: black;}
+::-webkit-scrollbar-thumb {background: rgb(20, 150, 20);}
+
+.stories {width: 95%; padding: 20px; border-bottom: 1px solid rgb(20, 150, 20);}
+.stories a {color: rgb(250, 250, 200); text-decoration: none; font-size: 18px;}
+.stories img {height: 60px; width: 60px; float: left; margin-right: 10px;}
+.stories a:hover {color: orange;}
+
+</style>
+</head>
+
+<body bgcolor="black" style="color:#C0C0C0; width: 99%; height: 100%;">
+
+
+ <div class="d1"><h1></h1></div>
+ <div class="d2"> <a style="text-decoration:none" href="C:\Users\DELL\Documents\Website\herbs.html" target="_self">
+                            <img src="C:\Users\DELL\Documents\Website\logo.png" width="103" height="50"></a></div>
+ <div class="d3">
+  <ul class="unlist">
+  <li class="list"><a class="active" href="C:\Users\DELL\Documents\Website\herbs.html">Home</a></li>
+  <li class="list"><a href="C:\Users\DELL\Documents\Website\about.html">About</a></li>
+  </ul>                                      
+</div><br>
+
+<div class="right1">
+  <select class="chosen" onchange="diseasedisplay(this)">
+    <option style="display: none;" value="" disabled selected >Select Disease</option>
+    <option value="0">Cancer </option>
+    <option value="1">Diabetes</option>
+    <option value="2">Diarrhea</option>
+    <option value="3">Lupus</option>
+    <option value="4">Malaria</option>
+    <option value="5">Tuberculosis</option>
+    <option value="6">Typhoid</option>
+  </select>
+  <script>
+    function diseasedisplay(select)
+        {
+          if (select.value==0)
+          {
+            window.open('C:/Users/DELL/Documents/Website/herbs-for-cancer.html', "_self");
+          }
+          else if (select.value==1)
+          {
+            window.open('C:/Users/DELL/Documents/Website/herbs-for-diabetes.html', "_self");
+          }
+          else if (select.value==2)
+          {
+            window.open('C:/Users/DELL/Documents/Website/herbs-for-diarrhea.html', "_self");
+          }
+          else if (select.value==3)
+          {
+            window.open('C:/Users/DELL/Documents/Website/herbs-for-lupus.html', "_self");
+          }
+          else if (select.value==4)
+          {
+            window.open('C:/Users/DELL/Documents/Website/herbs-for-malaria.html', "_self");
+          }
+          else if (select.value==5)
+          {
+            window.open('C:/Users/DELL/Documents/Website/herbs-for-tuberculosis.html', "_self");
+          }
+          else if (select.value==6)
+          {
+            window.open('C:/Users/DELL/Documents/Website/herbs-for-typhoid.html', "_self");
+          }
+          else
+          { 
+            alert("Something went wrong. Please reload the page.");
+          }
+        }
+  </script>
+</div>
+
+<div class="left1">
+  <aside style="font-size: 18px; border-bottom: 1px solid rgb(20, 150, 20); width:95%"><p><b>Related Stories...</b></p></aside>
+  <aside class="stories">
+    <a href="https://www.healthline.com/nutrition/apples-and-diabetes" target="_self">
+      <img src="C:\Users\DELL\Documents\Website\storyapple.jpg"> Apples Affect Diabetes and Blood Sugar Levels?</a>
+  </aside>
+  <aside class="stories">
+    <a href="https://www.healthline.com/nutrition/bananas-diabetes#TOC_TITLE_HDR_2" target="_self">
+      <img src="C:\Users\DELL\Documents\Website\storybanana.jpg">Are Bananas Fattening or Weight Loss Friendly?</a>
+    </a>
+  </aside>
+  <aside class="stories">
+    <a href="https://www.healthline.com/health/beta-carotene-benefits" target="_self">
+      <img src="C:\Users\DELL\Documents\Website\storycarrot.jpg">Benefits of Beta Carotene and How to Get It</a>
+    </a>
+  </aside>
+  <aside class="stories">
+    <a href="https://www.healthline.com/nutrition/basil#varieties" target="_self">
+      <img src="C:\Users\DELL\Documents\Website\storybasil.jpg" style="height: 50px;">The Health Benefits of Holy Basil</a>
+    </a>
+  </aside>
+  <aside class="stories">
+    <a href="https://www.healthline.com/nutrition/tomato-juice" target="_self">
+      <img src="C:\Users\DELL\Documents\Website\storytomato.jpg">Is Tomato Juice Good for You? Benefits and Downsides</a>
+    </a>
+  </aside>
+  <aside class="stories">
+    <a href="https://www.healthline.com/health/food-nutrition/foods-that-boost-the-immune-system" target="_self">
+      <img src="C:\Users\DELL\Documents\Website\story15.jpg"style="height: 50px;">15 Foods That Boost the Immune System</a>
+    </a>
+  </aside>
+</div>
+
+
+<div class="content1">
+  <div class="slider">
+    <div class="mySlides1">
+      <a href="C:\Users\DELL\Documents\Website\apple.html">
+      <img src="C:\Users\DELL\Documents\Website\apple.jpg" height="180"style="width:100%"></a>
+      <div class="text">Apple</div>
+    </div>
+    <div class="mySlides1">
+      <a href="C:\Users\DELL\Documents\Website\banana.html">
+      <img src="C:\Users\DELL\Documents\Website\banana.jpg" height="180" style="width:100%"></a>
+      <div class="text">Banana</div>
+    </div>
+    <div class="mySlides1">
+      <a href="C:\Users\DELL\Documents\Website\kiwi.html">
+      <img src="C:\Users\DELL\Documents\Website\kiwi.jpg" height="180" style="width:100%"></a>
+      <div class="text">Kiwi</div>
+    </div>
+    <div class="mySlides1">
+      <a href="C:\Users\DELL\Documents\Website\watermelon.html">
+      <img src="C:\Users\DELL\Documents\Website\watermelon.jpg" height="180" style="width:100%"></a>
+      <div class="text">Watermelon</div>
+    </div>
+    <div class="mySlides1">
+      <a href="C:\Users\DELL\Documents\Website\apricot.html">
+      <img src="C:\Users\DELL\Documents\Website\apricot.jpg" height="180" style="width:100%"></a>
+      <div class="text">Apricot</div>
+    </div>
+    <div class="mySlides1">
+      <a href="C:\Users\DELL\Documents\Website\pineapple.html">
+      <img src="C:\Users\DELL\Documents\Website\pineapple.jpg" height="180" style="width:100%"></a>
+      <div class="text">Pineapple</div>
+    </div>
+    <div class="mySlides1">
+      <a href="C:\Users\DELL\Documents\Website\pear.html">
+      <img src="C:\Users\DELL\Documents\Website\pear.jpg" height="180" style="width:100%"></a>
+      <div class="text">Pear</div>
+    </div>
+    <div class="mySlides1">
+      <a href="C:\Users\DELL\Documents\Website\peach.html">
+      <img src="C:\Users\DELL\Documents\Website\peach.jpg" height="180" style="width:100%"></a>
+      <div class="text">Peach</div>
+    </div>
+    <div class="mySlides1">
+      <a href="C:\Users\DELL\Documents\Website\lemon.html">
+      <img src="C:\Users\DELL\Documents\Website\lemon.jpg" height="180" style="width:100%"></a>
+      <div class="text">Lemon</div>
+    </div>
+    <div class="mySlides1">
+      <a href="C:\Users\DELL\Documents\Website\mango.html">
+      <img src="C:\Users\DELL\Documents\Website\mango.jpg" height="180" style="width:100%"></a>
+      <div class="text">Mango</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+  </div>
+  <br><br>
+
+  <div class="slider">
+    <div class="mySlides2">
+      <a href="C:\Users\DELL\Documents\Website\dill.html">
+      <img src="C:\Users\DELL\Documents\Website\dill.jpg" height="180"style="width:100%"></a>
+      <div class="text">Dill</div>
+    </div>
+    <div class="mySlides2">
+      <a href="C:\Users\DELL\Documents\Website\mint.html">
+      <img src="C:\Users\DELL\Documents\Website\mint.jpg" height="180" style="width:100%"></a>
+      <div class="text">Mint</div>
+    </div>
+    <div class="mySlides2">
+      <a href="C:\Users\DELL\Documents\Website\turmeric.html">
+      <img src="C:\Users\DELL\Documents\Website\turmeric.jpg" height="180" style="width:100%"></a>
+      <div class="text">Turmeric</div>
+    </div>
+    <div class="mySlides2">
+      <a href="C:\Users\DELL\Documents\Website\basil.html">
+      <img src="C:\Users\DELL\Documents\Website\basil.jpg" height="180" style="width:100%"></a>
+      <div class="text">Basil</div>
+    </div>
+    <div class="mySlides2">
+      <a href="C:\Users\DELL\Documents\Website\spinach.html">
+      <img src="C:\Users\DELL\Documents\Website\spinach.jpg" height="180" style="width:100%"></a>
+      <div class="text">Spinach</div>
+    </div>
+   <div class="mySlides2">
+      <a href="C:\Users\DELL\Documents\Website\oregano.html">
+      <img src="C:\Users\DELL\Documents\Website\oregano.jpg" height="180" style="width:100%"></a>
+      <div class="text">Origano</div>
+    </div>
+    <div class="mySlides2">
+      <a href="C:\Users\DELL\Documents\Website\cilantro.html">
+      <img src="C:\Users\DELL\Documents\Website\cilantro.jpg" height="180" style="width:100%"></a>
+      <div class="text">Cilantro</div>
+    </div>
+    <div class="mySlides2">
+      <a href="C:\Users\DELL\Documents\Website\chamomile.html">
+      <img src="C:\Users\DELL\Documents\Website\chamomile.jpg" height="180" style="width:100%"></a>
+      <div class="text">Chamomile</div>
+    </div>
+    
+  <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+  </div>
+  <br><br>
+
+  <div class="slider">
+    <div class="mySlides3">
+      <a href="C:\Users\DELL\Documents\Website\cauliflower.html">
+      <img src= "C:\Users\DELL\Documents\Website\cauliflower.jpg" height="180" style="width:100%"></a>
+      <div class="text">Cauliflower</div>
+    </div>
+    <div class="mySlides3">
+     <a href="C:\Users\DELL\Documents\Website\carrots.html">
+     <img src="C:\Users\DELL\Documents\Website\carrots.jpg" height ="180" style="width:100%"></a>
+     <div class="text">Carrots</div>
+    </div>
+     <div class="mySlides3">
+      <a href="C:\Users\DELL\Documents\Website\broccoli.html">
+      <img src="C:\Users\DELL\Documents\Website\broccoli.jpg" height = "180" style="width:100%"></a>
+      <div class="text">Broccoli</div>
+    </div>
+    <div class="mySlides3">
+     <a href="C:\Users\DELL\Documents\Website\potato.html">
+     <img src="C:\Users\DELL\Documents\Website\potato.jpg" height ="180" style="width:100%"></a>
+     <div class="text">Potato</div>
+    </div>
+    <div class="mySlides3">
+     <a href="C:\Users\DELL\Documents\Website\cucumber.html">
+     <img src="C:\Users\DELL\Documents\Website\cucumber.jpg" height ="180" style="width:100%"></a>
+     <div class="text">Cucumber</div>
+    </div>
+    <div class="mySlides3">
+     <a href="C:\Users\DELL\Documents\Website\tomato.html">
+     <img src="C:\Users\DELL\Documents\Website\tomato.jpg" height ="180" style="width:100%"></a>
+     <div class="text">Tomato</div>
+    </div>
+     <div class="mySlides3">
+     <a href="C:\Users\DELL\Documents\Website\onion.html">
+     <img src="C:\Users\DELL\Documents\Website\onion.jpg" height ="180" style="width:100%"></a>
+     <div class="text">Onion</div>
+    </div>
+     <div class="mySlides3">
+     <a href="C:\Users\DELL\Documents\Website\capsicum.html">
+     <img src="C:\Users\DELL\Documents\Website\capcicum.jpg" height ="180" style="width:100%"></a>
+     <div class="text">Capsicum</div>
+    </div>
+    
+   
+  <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+  </div>
+</div>
+  <br><br>
+
+  <script>
+    var sliderIndex = [1,1,1];
+    var sliderId = ["mySlides1", "mySlides2", "mySlides3"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+
+    function plusSlides(n, no) {showSlides(sliderIndex[no] += n, no);}
+
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(sliderId[no]);
+      if (n > x.length) {sliderIndex[no] = 1}    
+      if (n < 1) {sliderIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";}
+      x[sliderIndex[no]-1].style.display = "block";  
+    }
+  </script>
+</div> 
+
+<div class="content2" style="color: white;">
+  <br><br><br>
+  <h1>Some Common Disease</h1>
+  <ul>
+    <li><a class="a-diseases" href="C:\Users\DELL\Documents\Website\cancer.html">Cancer</a></li>
+    <li><a class="a-diseases" href="C:\Users\DELL\Documents\Website\diabetes.html">Diabetes</a></li>
+    <li><a class="a-diseases" href="C:\Users\DELL\Documents\Website\diarrhea.html">Diarrhea</a></li>
+    <li><a class="a-diseases" href="C:\Users\DELL\Documents\Website\lupus.html">Lupus</a></li>
+    <li><a class="a-diseases" href="C:\Users\DELL\Documents\Website\malaria.html">Malaria</a></li>
+    <li><a class="a-diseases" href="C:\Users\DELL\Documents\Website\typhoid.html">Typhoid</a></li>
+    <li><a class="a-diseases" href="C:\Users\DELL\Documents\Website\tuberculosis.html">Tuberculosis</a></li>
+  </ul>
+
+</div>
+<div class="bottom">
+  <a href="C:\Users\DELL\Documents\Website\reference.html">References</a>
+
+</div>
+
+
+</body>
+<script type="text/javascript">
+  $(".chosen").chosen();
+</script>
+</html> 

@@ -1,0 +1,18 @@
+.d1 {width:20%; height:70px; float:left;}
+.d2 {width:10%; height:70px; float:left; }
+.d3 {width: 45%; height:70px; float: left;}
+
+.left1 {height:100%; width:15%; float:left; }
+.content1 {height:100%; width:70%; float: left;}
+.right1 {height:100%; width:15%; float:right; margin-top: -10px;} 
+
+select {width: 95%;}
+body {font-size: 17px; height: 175%; color: rgb(200, 200, 200);}
+
+::-webkit-scrollbar {width: 5px; overflow-x:hidden;}
+::-webkit-scrollbar-track {background: black;}
+::-webkit-scrollbar-thumb {background: rgb(20, 150, 20);}
+
+.note {border: 1px solid white; padding: 10px; width: 84%;}
+
+.display-food {text-decoration: none; color: white;}

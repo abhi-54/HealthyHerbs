@@ -1,0 +1,3 @@
+.bottom {width: 100%; height: 19%; background-color: #111; float: left; text-align: center; padding: 25px; }
+.bottom a {color: wheat;}
+.bottom a:hover {color: skyblue;}  

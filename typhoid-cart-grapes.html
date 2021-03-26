@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Buy Grapes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="C:\Users\DELL\Documents\Website\cart.css">
+    <link rel="icon" href="C:\Users\DELL\Documents\Website\logoicon.png" type="image/x-icon">
+    <script type="text/javascript" src="C:\Users\DELL\Documents\Website\add-to-cart.js" ></script>
+    <style>
+
+    </style>
+</head>
+<body bgcolor="black" style="width: 99%; height: 135%;">
+    <div class="d1"><h1></h1></div>
+    <div class="d2"> <a style="text-decoration:none" href="C:\Users\DELL\Documents\Website\herbs.html" target="_self">
+                     <img src="C:\Users\DELL\Documents\Website\logo.png" width="103" height="50"></a></div>
+    <div class="d3"><h1></h1></div>
+    <br>
+
+    <div class="right1">
+        <select class="chosen" onchange="diseasedisplay(this)">
+          <option style="display: none;" value="" disabled selected >Select Disease</option>
+          <option value="0">Cancer </option>
+          <option value="1">Diabetes</option>
+          <option value="2">Diarrhea</option>
+          <option value="3">Lupus</option>
+          <option value="4">Malaria</option>
+          <option value="5">Tuberculosis</option>
+          <option value="6">Typhoid</option>
+        </select>
+        <script>
+          function diseasedisplay(select)
+              {
+                if (select.value==0)
+                {
+                  window.open('C:/Users/DELL/Documents/Website/herbs-for-cancer.html', "_self");
+                }
+                else if (select.value==1)
+                {
+                  window.open('C:/Users/DELL/Documents/Website/herbs-for-diabetes.html', "_self");
+                }
+                else if (select.value==2)
+                {
+                  window.open('C:/Users/DELL/Documents/Website/herbs-for-diarrhea.html', "_self");
+                }
+                else if (select.value==3)
+                {
+                  window.open('C:/Users/DELL/Documents/Website/herbs-for-lupus.html', "_self");
+                }
+                else if (select.value==4)
+                {
+                  window.open('C:/Users/DELL/Documents/Website/herbs-for-malaria.html', "_self");
+                }
+                else if (select.value==5)
+                {
+                  window.open('C:/Users/DELL/Documents/Website/herbs-for-tuberculosis.html', "_self");
+                }
+                else if (select.value==6)
+                {
+                  window.open('C:/Users/DELL/Documents/Website/herbs-for-typhoid.html', "_self");
+                }
+                else
+                { 
+                  alert("Something went wrong. Please reload the page.");
+                }
+              }
+        </script>
+    </div>
+
+    <div class="left1">
+        <aside class="leftpara">Typhoid Fighting Foods</aside>
+        <aside class="leftpara2">
+            <p class="leftparabtwn"><a style="color: rgb(175, 175, 175); text-decoration: none;" href="C:\Users\DELL\Documents\Website\typhoid-cart-banana.html">Banana</a></p>
+            <p class="leftparabtwn"><a style="text-decoration: none; color: rgb(175, 175, 175);" href="C:\Users\DELL\Documents\Website\typhoid-cart-apricot.html">Apricot</a></p>
+            <p class="leftparabtwn"><a style="text-decoration: none; color: rgb(175, 175, 175);" href="C:\Users\DELL\Documents\Website\typhoid-cart-watermelon.html">Watermelon</a></p>
+            <p class="leftparabtwn"><a style="text-decoration: none; color: aqua;" href="C:\Users\DELL\Documents\Website\typhoid-cart-grapes.html">Grapes</a></p>
+            <p class="leftparabtwn"><a style="text-decoration: none; color: rgb(175, 175, 175);" href="C:\Users\DELL\Documents\Website\typhoid-cart-potato.html">Potato</a></p>
+            <p class="leftparabtwn"><a style="text-decoration: none; color: rgb(175, 175, 175);" href="C:\Users\DELL\Documents\Website\typhoid-cart-cucumber.html">Cucumber</a></p>
+
+
+          </aside>
+    </div>
+
+    <div class="content1">
+        <img src="C:\Users\DELL\Documents\Website\grapes.jpg" height="400">
+        <aside class="cartbox">
+          <p>Grapes, Green, 500g</p>
+          <p style="font-size: 17px;">Price: Rs. 110<b style="font-size: 14.5px;"> (Inclusive of all taxes)</b></p>
+          <p id="add"></p>
+          <button type="button" id="subt" value="sub"  onclick="minus()">-</button>
+          <input type="button" id="btn" name="btn" value="Add to Cart" onclick="counter2()" >
+          <button type="button" id="ad" value="addd" onclick="counter()">+</button><br><br>
+          <br><input type="button" id="buy" value="Buy">
+        </aside>
+    </div>
+
+    <div class="content2">
+      <h3>Grapes, Green</h3>
+      <div class="border"></div>
+      <h4>About the product</h4>
+      <p>Juicy and snappy, with a beautiful balance of sweet and tart flavour, these grape bunches have a lingering taste.</p>
+      <div class="border"></div>
+      <h4>Storage and Uses</h4>
+      <p><ul>
+          <li>Wash the grapes under cool, running water. Pat them dry and store it in the refrigerator.</li>
+          <li>Rinse well and eat them right off the vine for a healthy, refreshing snack any time of day. You can also freeze them and toss them in drinks.</li>
+          <li>Make your salads and curd rice colourful by adding these refreshing and sweet grapes.</li>
+      </ul></p>
+      <div class="border"></div>
+    </div>
+
+</body>
+<script type="text/javascript">
+    $(".chosen").chosen();
+</script>
+</html>

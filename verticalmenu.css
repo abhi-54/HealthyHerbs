@@ -1,0 +1,9 @@
+.vertical-menu {width: 90%; height:212px; overflow-y:auto;}
+.vertical-menu a {background-color: #333; color: white;
+                            display: block; padding: 12px; text-decoration: none;}
+.vertical-menu a:hover {background-color: #111;}
+.vertical-menu a.active {background-color: #4CAF50; color: white;position: absolute; width: 177.5px;}
+
+::-webkit-scrollbar {width: 5px; overflow-x:hidden; height: 5px;}
+::-webkit-scrollbar-track {background: black;}
+::-webkit-scrollbar-thumb {background: #555;}

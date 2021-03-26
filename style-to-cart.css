@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.icon{
+    position: relative;
+    width: 2000%;
+    height: 1200%;
+}
+.span{
+    position: relative;
+    width: 200px;
+    height: 120px;
+}
