@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
-<script src="first.js"></script>
+<script src="selecttag.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
 <link rel="stylesheet" href="bottomstyle.css">
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -276,6 +276,25 @@ li {margin-top: 10px;}
 </div>
   <br><br>
 
+  <script>
+    var sliderIndex = [1,1,1];
+    var sliderId = ["mySlides1", "mySlides2", "mySlides3"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+
+    function plusSlides(n, no) {showSlides(sliderIndex[no] += n, no);}
+
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(sliderId[no]);
+      if (n > x.length) {sliderIndex[no] = 1}    
+      if (n < 1) {sliderIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";}
+      x[sliderIndex[no]-1].style.display = "block";  
+    }
+  </script>
 </div> 
 
 <div class="content2" style="color: white;">
