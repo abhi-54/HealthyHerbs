@@ -36,7 +36,7 @@ function diseasedisplay(select)
 
 var sliderIndex = [1,1,1];
 var sliderId = ["mySlides1", "mySlides2", "mySlides3"]
-showSlides(1, 1);
+showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
     
@@ -47,7 +47,6 @@ function showSlides(n, no) {
   var x = document.getElementsByClassName(sliderId[no]);
   if (n > x.length) {sliderIndex[no] = 1}    
   if (n < 1) {sliderIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";}
+
   x[sliderIndex[no]-1].style.display = "block";  
 }
