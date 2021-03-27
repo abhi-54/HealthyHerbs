@@ -36,7 +36,7 @@ function diseasedisplay(select)
 
 var sliderIndex = [1,1,1];
 var sliderId = ["mySlides1", "mySlides2", "mySlides3"]
-showSlides(1, 0);
+showSlides(1, 1);
 showSlides(1, 1);
 showSlides(1, 2);
     
